@@ -1,9 +1,6 @@
-<!DOCTYPE html>
-<html>
-<body>
+{% extends 'polls/base.html' %}
 
-<h1>List of questions</h1>
-
+{% block main_content %}
 
 {% if latest_questions %}
     <ul>
@@ -14,5 +11,5 @@
 {% else %}
     <p> Do not have any qestions </p>
 {% endif %}      
-</body>
-</html>
+
+{% endblock %}
